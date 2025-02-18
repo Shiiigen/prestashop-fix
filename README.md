@@ -44,8 +44,8 @@ Une fois que vous avez récupéré le répertoire, vous pouvez lancer le script 
 Et ensuite, il faudra lancer les commandes suivantes :
 
 ```bash
-        - wget https://github.com/Shiiigen/prestashop-fix/releases/download/1.0/prestashop_fix.sh
-        - source prestashop_fix.sh
+- wget https://github.com/Shiiigen/prestashop-fix/releases/download/1.0/prestashop_fix.sh
+- source prestashop_fix.sh
 ```
 
 Vous pouvez vous aider des captures d'écrans suivantes : 
