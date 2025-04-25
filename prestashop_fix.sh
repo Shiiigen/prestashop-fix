@@ -76,8 +76,6 @@ if [[ "$PRESTASHOP_VERSION" == 1.6* ]]; then
   rm -vf "prestashop_$PRESTASHOP_VERSION.zip" Install_PrestaShop.html &&
   cp -vaR prestashop/* . &&
   rm -vrf admin/ install/ &&
-  rm -vrf cache/smarty/cache &&
-  rm -vrf cache/smarty/compile &&
   rm -vrf prestashop/ &&
   rm prestashop_fix.sh &&
   find . -type f -exec chmod 644 {} \; -print;find . -type d -exec chmod 755 {} \; -print
