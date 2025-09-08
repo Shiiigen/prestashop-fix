@@ -78,6 +78,8 @@ if [[ "$PRESTASHOP_VERSION" == 1.6* ]]; then
   rm -vrf admin/ install/ &&
   rm -vrf prestashop/ &&
   rm prestashop_fix.sh &&
+  mv cache/smarty cache/smarty_ &&
+  mv cache/class_index.php cache/class_index.php
   find . -type f -exec chmod 644 {} \; -print;find . -type d -exec chmod 755 {} \; -print
 else
   echo "Téléchargement et extraction de la version $PRESTASHOP_VERSION pour PrestaShop $PRESTASHOP_VERSION"
