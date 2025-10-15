@@ -105,10 +105,10 @@ if [[ "$PRESTASHOP_VERSION" == 1.6* ]]; then
 # Fonction beta, qui changera lorsque le build sera présent sur le repo git de prestashop.
 elif [[ "$PRESTASHOP_VERSION" == 9.* ]]; then
   echo "Téléchargement et extraction de PrestaShop $PRESTASHOP_VERSION (édition basique)"
-  wget "https://assets.prestashop3.com/dst/edition/corporate/9.0.0-1.0/prestashop_edition_basic_version_$PRESTASHOP_VERSION-1.0.zip" &&
-  unzip -o "prestashop_edition_basic_version_$PRESTASHOP_VERSION-1.0.zip" &&
+  wget "https://dl.shiigen.fr/9/prestashop_$PRESTASHOP_VERSION.zip" &&
+  unzip -o "prestashop_$PRESTASHOP_VERSION.zip" &&
   unzip -o "prestashop.zip" &&
-  rm -vf "prestashop_edition_basic_version_$PRESTASHOP_VERSION-1.0.zip" &&
+  rm -vf "prestashop_$PRESTASHOP_VERSION.zip" &&
   rm -vrf "prestashop.zip" &&
   cp -vaR prestashop/* . &&
   rm -vrf prestashop/ &&
